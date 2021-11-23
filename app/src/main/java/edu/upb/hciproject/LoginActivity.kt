@@ -10,7 +10,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.util.PatternsCompat
-import edu.upb.hciproject.databinding.ActivityLoginBinding
 import java.util.regex.Pattern
 
 class LoginActivity : AppCompatActivity()  {
