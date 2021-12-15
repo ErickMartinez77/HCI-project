@@ -30,7 +30,7 @@ object ChatDataSource {
         ),
         Chat(
             from = "Papingo Maminga",
-            message = "Mensaje de shein",
+            message = ":)",
             date = "08:10",
             imageUrl = "https://yellow.place/file/image/thumb/0/0/1064/vcuduyrnryztpscl.jpg"
         ),
