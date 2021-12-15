@@ -3,11 +3,14 @@
 
     <item
         android:id="@+id/menuItemCart"
-        android:title="Item" />
+        android:icon="@drawable/icons8_carrito_de_compras_90"
+        android:title="@string/menuItemCartLabel" />
     <item
         android:id="@+id/menuItemFeed"
-        android:title="Item" />
+        android:icon="@drawable/icons8_feed_de_actividad_96"
+        android:title="@string/menuItemFeedLabel" />
     <item
         android:id="@+id/menuItemChat"
-        android:title="Item" />
+        android:icon="@drawable/icons8_burbuja_de_di_logo_con_puntos_100"
+        android:title="@string/menuItemChatLabel" />
 </menu>

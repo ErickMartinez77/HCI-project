@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.upb.hciproject">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,13 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HCIProject">
         <activity
-            android:name=".MainMenuActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ChatActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SplashActivity"
+            android:name=".activities.MainMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
             android:exported="true" />
     </application>
 
