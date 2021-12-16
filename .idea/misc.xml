@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/layout/activity_main_menu.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_messages.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_item_chat.xml" value="0.25" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.19322916666666667" />
       </map>

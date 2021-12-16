@@ -10,15 +10,21 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import edu.upb.hciproject.R
+import edu.upb.hciproject.interfaces.OnChatItemClickListener
 import edu.upb.hciproject.model.Chat
 
 class ChatListAdapter: RecyclerView.Adapter<ChatListViewHolder>() {
-    val elementList: MutableList<Chat> = mutableListOf()
+    private val elementList: MutableList<Chat> = mutableListOf()
+    private var onChatItemClickListener: ((chat:Chat) -> Unit)? = null
 
     fun addAll(newElementList: MutableList<Chat>){
         elementList.clear()
         elementList.addAll(newElementList)
         notifyDataSetChanged()
+    }
+
+    fun setOnChatItemClickListener(onChatItemClickListener: ((chat:Chat) -> Unit)?){
+        this.onChatItemClickListener = onChatItemClickListener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatListViewHolder {
@@ -28,6 +34,10 @@ class ChatListAdapter: RecyclerView.Adapter<ChatListViewHolder>() {
 
     override fun onBindViewHolder(holder: ChatListViewHolder, position: Int) {
         holder.bind(elementList[position])
+
+        holder.itemView.setOnClickListener{
+            onChatItemClickListener?.invoke(elementList[position])
+        }
     }
 
     override fun getItemCount(): Int {
@@ -35,7 +45,7 @@ class ChatListAdapter: RecyclerView.Adapter<ChatListViewHolder>() {
     }
 }
 
-class ChatListViewHolder(val itemView: View): RecyclerView.ViewHolder(itemView){
+class ChatListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     private val ivChat = itemView.findViewById<ImageView>(R.id.ivChat)
     private val tvName = itemView.findViewById<TextView>(R.id.tvName)
     private val tvMessage = itemView.findViewById<TextView>(R.id.tvMessage)
