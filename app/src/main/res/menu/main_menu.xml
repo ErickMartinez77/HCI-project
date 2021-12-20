@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemFeed"
+        android:icon="@drawable/icons8_feed_de_actividad_96"
+        android:title="@string/menuItemFeedLabel" />
+    <item
+        android:id="@+id/menuItemChat"
+        android:icon="@drawable/icons8_burbuja_de_di_logo_con_puntos_100"
+        android:title="@string/menuItemChatLabel" />
+</menu>

@@ -1,15 +1,13 @@
-package edu.upb.hciproject
+package edu.upb.hciproject.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.util.PatternsCompat
+import edu.upb.hciproject.R
 import java.util.regex.Pattern
 
 class LoginActivity : AppCompatActivity()  {
@@ -30,19 +28,19 @@ class LoginActivity : AppCompatActivity()  {
         editTextEmail = findViewById(R.id.email)
         editTextPassword = findViewById(R.id.password)
 
-       // btLogin.setOnClickListener{validate()}
-        btLogin.setOnClickListener{
+        btLogin.setOnClickListener{validate()}
+        //btLogin.setOnClickListener{
         //    val correo = editTextEmail.text.toString()
         //    val pass = editTextPassword.text.toString()
         //    if (correo == "e@gmail.com" && pass =="123"){
-               val intent = Intent(this, FeedActivity::class.java)
-                startActivity(intent)
+        //        //val intent = Intent(this, LoginActivity::class.java)
+        //        //startActivity(intent)
         //        //finish()
         //        Toast.makeText(this,"Exito", Toast.LENGTH_SHORT).show()
         //    } else{
         //        Toast.makeText(this,"NICOOOOOOP", Toast.LENGTH_SHORT).show()
         //    }
-        }
+        //}
     }
 
     private fun validate(){
@@ -55,12 +53,12 @@ class LoginActivity : AppCompatActivity()  {
         val correo = editTextEmail.text.toString()
         val pass = editTextPassword.text.toString()
         if (correo == "e@gmail.com" && pass =="123"){
-            //val intent = Intent(this, LoginActivity::class.java)
-            //startActivity(intent)
-            //finish()
-            Toast.makeText(this,"Exito", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MainMenuActivity::class.java)
+            startActivity(intent)
+            finish()
+            //Toast.makeText(this,"Exito", Toast.LENGTH_SHORT).show()
         } else{
-            Toast.makeText(this,"NICOOOOOOP", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Correo o password incorrectos", Toast.LENGTH_SHORT).show()
         }
     }
 

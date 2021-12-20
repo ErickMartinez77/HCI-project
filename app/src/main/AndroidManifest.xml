@@ -22,8 +22,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="true" />
+        <activity
+            android:name=".activities.MainMenuActivity"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>
