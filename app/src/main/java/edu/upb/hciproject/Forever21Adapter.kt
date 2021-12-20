@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 val ropa = arrayOf("Sudadera","Polera","Canguro")
 val precio = arrayOf(
-    "140$",
-    "50$",
-    "30$")
+    "140$                                                                                       ",
+    "50$                                                                                        ",
+    "30$                                                                                        ")
 
 var imagen = intArrayOf(
     R.drawable.sudadera_forever21,

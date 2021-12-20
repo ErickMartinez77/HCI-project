@@ -12,9 +12,9 @@ val titles = arrayOf("ZARA","Forever 21","Bershka","LEVI'S", "Calvin Klein")
 val details = arrayOf(
     "Vestidos ,Faldas , Pantalones",
     "Poleras, Sudaderas, Canguros",
-    "Camisetas, Abrigos, Vestidos",
-    "Jeans, Poleras, Canguros",
-    "Boxers, Gorras, Poleras")
+    "Camisetas, Abrigos, Vestidos       ",
+    "Jeans, Poleras, Canguros             ",
+    "Boxers, Gorras, Poleras                        ")
 var images = intArrayOf(
     R.drawable.zara_logo,
     R.drawable.forever_21_logo,
