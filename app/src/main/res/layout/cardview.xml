@@ -36,7 +36,8 @@
             android:layout_toEndOf="@+id/item_image"
             android:layout_toRightOf="@+id/item_image"
             android:text="Marca"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -48,7 +49,8 @@
             android:layout_toEndOf="@+id/item_image"
             android:layout_toRightOf="@+id/item_image"
             android:text="Detalles"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textStyle="bold" />
 
     </RelativeLayout>
