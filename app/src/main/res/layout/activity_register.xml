@@ -21,17 +21,17 @@
         app:srcCompat="@drawable/fashion_white" />
 
     <Button
-        android:id="@+id/btLogin"
+        android:id="@+id/btRegister"
         android:layout_width="340dp"
         android:layout_height="56dp"
         android:backgroundTint="@color/black"
-        android:text="Login"
+        android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.731" />
 
 
     <EditText
@@ -45,13 +45,12 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:errorEnabled="true"
-        app:layout_constraintBottom_toTopOf="@+id/btLogin"
+        app:layout_constraintBottom_toTopOf="@+id/btRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
 
     <EditText
         android:id="@+id/password"
@@ -63,61 +62,29 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:errorEnabled="true"
-        app:layout_constraintBottom_toTopOf="@+id/btLogin"
+        app:layout_constraintBottom_toTopOf="@+id/btRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <EditText
+        android:id="@+id/cellphone"
+        android:layout_width="319dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Cellphone"
+        android:inputType="textPhonetic"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/btRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.338" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.130"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58"
-        app:srcCompat="@drawable/facebook" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.280"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58"
-        app:srcCompat="@drawable/google" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.580"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58"
-        app:srcCompat="@drawable/twitter" />
-
-    <Button
-        android:id="@+id/btRegister"
-        android:layout_width="340dp"
-        android:layout_height="56dp"
-        android:backgroundTint="@color/black"
-        android:text="Register"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.619"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
