@@ -5,13 +5,14 @@ import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import edu.upb.hciproject.R
 import edu.upb.hciproject.fragments.ChatFragment
+import edu.upb.hciproject.fragments.FeedFragment
 import edu.upb.hciproject.replaceFragment
 
 class MainMenuActivity : AppCompatActivity() {
     private lateinit var bottomNavigationView: BottomNavigationView
 
     private val chatFragment = ChatFragment()
-    private val feedFragment = PruebaFragment()
+    private val feedFragment = FeedFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

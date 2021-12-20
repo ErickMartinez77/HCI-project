@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HCIProject">
         <activity
-            android:name=".FeedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
