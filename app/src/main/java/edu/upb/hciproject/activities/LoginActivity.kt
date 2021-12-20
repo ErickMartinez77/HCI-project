@@ -1,5 +1,6 @@
 package edu.upb.hciproject.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -52,12 +53,12 @@ class LoginActivity : AppCompatActivity()  {
         val correo = editTextEmail.text.toString()
         val pass = editTextPassword.text.toString()
         if (correo == "e@gmail.com" && pass =="123"){
-            //val intent = Intent(this, LoginActivity::class.java)
-            //startActivity(intent)
-            //finish()
-            Toast.makeText(this,"Exito", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MainMenuActivity::class.java)
+            startActivity(intent)
+            finish()
+            //Toast.makeText(this,"Exito", Toast.LENGTH_SHORT).show()
         } else{
-            Toast.makeText(this,"NICOOOOOOP", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Correo o password incorrectos", Toast.LENGTH_SHORT).show()
         }
     }
 
