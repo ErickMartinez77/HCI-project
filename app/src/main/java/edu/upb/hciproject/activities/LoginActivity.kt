@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity()  {
         //    } else{
         //        Toast.makeText(this,"NICOOOOOOP", Toast.LENGTH_SHORT).show()
         //    }
-        //}
+        //} changes
     }
 
     private fun validate(){
