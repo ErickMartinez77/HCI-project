@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-val ropa1 = arrayOf("Canguro","Polera","Sudadera")
+val ropa1 = arrayOf("Falda","Pantalon","Vestido")
 val precio1 = arrayOf(
     "100$",
     "50$",

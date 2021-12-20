@@ -23,7 +23,16 @@ var images = intArrayOf(
     R.drawable.calvinklein_logo)
 
 class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>(){
-    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+
+    private lateinit var mListener: onBrandClickListener
+    interface onBrandClickListener{
+        fun onItemClick(position:Int)
+    }
+    fun setOnItemClickListener(listener:onBrandClickListener){
+        mListener=listener
+    }
+
+    inner class ViewHolder(itemView: View, listener:onBrandClickListener): RecyclerView.ViewHolder(itemView){
         var itemImage: ImageView
         var itemTitle: TextView
         var itemDetail: TextView
@@ -32,6 +41,9 @@ class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>(){
             itemImage =itemView.findViewById(R.id.item_image)
             itemTitle =itemView.findViewById(R.id.item_title)
             itemDetail =itemView.findViewById(R.id.item_details)
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
         }
     }
 
@@ -39,7 +51,7 @@ class CustomAdapter: RecyclerView.Adapter<CustomAdapter.ViewHolder>(){
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val v=LayoutInflater.from(viewGroup.context).inflate(R.layout.cardview, viewGroup,false)
-        return ViewHolder(v)
+        return ViewHolder(v,mListener)
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
